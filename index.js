@@ -3,21 +3,20 @@ function mapNegative(array, fx){
   let arr=[]
   for(let i=0;i <array.length;i++){
     arr.push(fx(array[i]));
-    
   }
   return arr;
 }
 
-function reduce(array, fx, start){
- let a= (!!start) ? start : array[0];
- let b= (!!start) ? 0 : 1;
+/*function reduce(arr, fct, start){
+ let r= (!!start) ? start : arr[0];
+ let i= (!!start) ? 0 : 1;
  
- for (let i ; i< array.length;i++){
-    a = fx(array[i], a)
+ for ( i ; i< arr.length;i++){
+    r = fct(arr[i], r)
  }
  
- return a;
-}
+ return r;
+}*/
 
 
 
