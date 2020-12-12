@@ -11,7 +11,7 @@ function reduce(array, fx, start){
  let a= (!!start) ? start : array[0];
  //let i= (!!start) ? 0 : 1;
  
- for (let i=0 ; i< array.length;i++){
+ for ( let i=(!!start) ? 0 : 1 ; i< array.length;i++){
     a = fx(array[i], a)
  }
  
