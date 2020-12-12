@@ -7,11 +7,10 @@ function map(array, fx){
   return arr;
 }
 
-function reduce(array, fx, start){
- let a= (!!start) ? start : array[0];
- //let i= (!!start) ? 0 : 1;
+function reduce(array, fx, p){
+ let a= (!!p) ? p : array[0];
  
- for ( let i=(!!start) ? 0 : 1 ; i< array.length;i++){
+ for ( let i=(!!p) ? 0 : 1 ; i< array.length;i++){
     a = fx(array[i], a)
  }
  
