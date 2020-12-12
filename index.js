@@ -7,16 +7,16 @@ function map(array, fx){
   return arr;
 }
 
-/*function reduce(arr, fct, start){
- let r= (!!start) ? start : arr[0];
- let i= (!!start) ? 0 : 1;
+function reduce(array, fx, start){
+ let a= (!!start) ? start : array[0];
+ //let i= (!!start) ? 0 : 1;
  
- for ( i ; i< arr.length;i++){
-    r = fct(arr[i], r)
+ for (let i=0 ; i< array.length;i++){
+    a = fx(array[i], a)
  }
  
- return r;
-}*/
+ return a;
+}
 
 
 
