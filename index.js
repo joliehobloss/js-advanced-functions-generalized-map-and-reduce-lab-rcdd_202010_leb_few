@@ -1,5 +1,5 @@
 // Add your functions here
-function mapNegative(array, fx){
+function map(array, fx){
   let arr=[]
   for(let i=0;i <array.length;i++){
     arr.push(fx(array[i]));
